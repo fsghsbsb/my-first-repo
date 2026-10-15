@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="693" height="427" viewBox="0 0 693 427" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+<rect x="0.5" y="0.5" width="692" height="426" rx="8" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 8.5 A8 8 0 0 1 8.5 0.5 L684.3 0.5 A8 8 0 0 1 692.3 8.5 L692.3 34 L0.5 34 Z" fill="#181825"/>
+<circle cx="18" cy="17.0" r="5.5" fill="#f38ba8"/>
+<circle cx="36" cy="17.0" r="5.5" fill="#f9e2af"/>
+<circle cx="54" cy="17.0" r="5.5" fill="#a6e3a1"/>
+<text x="346" y="22.0" font-size="13" fill="#6c7086" text-anchor="middle">GDB: 断点命中内核入口 0x80200000</text>
+<text x="18" y="64" font-size="14" xml:space="preserve" fill="#a6e3a1">(gdb) watch *(unsigned int *)0x80200000</text>
+<text x="18" y="85" font-size="14" xml:space="preserve" fill="#cdd6f4">Hardware watchpoint 1: *(unsigned int *)0x80200000</text>
+<text x="18" y="106" font-size="14" xml:space="preserve" fill="#a6e3a1">(gdb) break *0x80200000</text>
+<text x="18" y="127" font-size="14" xml:space="preserve" fill="#cdd6f4">Breakpoint 2 at 0x80200000: file kern/init/entry.S, line 7.</text>
+<text x="18" y="148" font-size="14" xml:space="preserve" fill="#a6e3a1">(gdb) continue</text>
+<text x="18" y="169" font-size="14" xml:space="preserve" fill="#cdd6f4">Breakpoint 2, kern_entry () at kern/init/entry.S:7</text>
+<text x="18" y="190" font-size="14" xml:space="preserve" fill="#cdd6f4">7           la sp, bootstacktop</text>
+<text x="18" y="211" font-size="14" xml:space="preserve" fill="#a6e3a1">(gdb) info registers a0 a1 sp ra</text>
+<text x="18" y="232" font-size="14" xml:space="preserve" fill="#cdd6f4">a0             0x0      0</text>
+<text x="18" y="253" font-size="14" xml:space="preserve" fill="#cdd6f4">a1             0x87000000       2264924160</text>
+<text x="18" y="274" font-size="14" xml:space="preserve" fill="#cdd6f4">sp             0x8003def0       0x8003def0</text>
+<text x="18" y="295" font-size="14" xml:space="preserve" fill="#cdd6f4">ra             0x8000966a       0x8000966a</text>
+<text x="18" y="316" font-size="14" xml:space="preserve" fill="#a6e3a1">(gdb) info breakpoints</text>
+<text x="18" y="337" font-size="14" xml:space="preserve" fill="#cdd6f4">Num     Type           Disp Enb Address            What</text>
+<text x="18" y="358" font-size="14" xml:space="preserve" fill="#cdd6f4">1       hw watchpoint  keep y                      *(unsigned int *)0x80200000</text>
+<text x="18" y="379" font-size="14" xml:space="preserve" fill="#cdd6f4">2       breakpoint     keep y   0x0000000080200000 kern/init/entry.S:7</text>
+<text x="18" y="400" font-size="14" xml:space="preserve" fill="#cdd6f4">        breakpoint already hit 1 time</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="491" height="364" viewBox="0 0 491 364" font-family="DejaVu Sans Mono, Menlo, Consolas, monospace">
+<rect x="0.5" y="0.5" width="490" height="363" rx="8" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 8.5 A8 8 0 0 1 8.5 0.5 L482.2 0.5 A8 8 0 0 1 490.2 8.5 L490.2 34 L0.5 34 Z" fill="#181825"/>
+<circle cx="18" cy="17.0" r="5.5" fill="#f38ba8"/>
+<circle cx="36" cy="17.0" r="5.5" fill="#f9e2af"/>
+<circle cx="54" cy="17.0" r="5.5" fill="#a6e3a1"/>
+<text x="245" y="22.0" font-size="13" fill="#6c7086" text-anchor="middle">QEMU 串口日志: OpenSBI 启动与内核打印</text>
+<text x="18" y="64" font-size="14" xml:space="preserve" fill="#cdd6f4">OpenSBI v1.0</text>
+<text x="18" y="85" font-size="14" xml:space="preserve" fill="#cdd6f4">Platform Name             : riscv-virtio,qemu</text>
+<text x="18" y="106" font-size="14" xml:space="preserve" fill="#cdd6f4">Platform HART Count       : 1</text>
+<text x="18" y="127" font-size="14" xml:space="preserve" fill="#cdd6f4">Platform Timer Device     : aclint-mtimer @ 10000000Hz</text>
+<text x="18" y="148" font-size="14" xml:space="preserve" fill="#cdd6f4">Platform Console Device   : uart8250</text>
+<text x="18" y="169" font-size="14" xml:space="preserve" fill="#cdd6f4">Firmware Base             : 0x80000000</text>
+<text x="18" y="190" font-size="14" xml:space="preserve" fill="#cdd6f4">Firmware Size             : 252 KB</text>
+<text x="18" y="211" font-size="14" xml:space="preserve" fill="#cdd6f4">Domain0 Boot HART         : 0</text>
+<text x="18" y="232" font-size="14" xml:space="preserve" fill="#cdd6f4">Domain0 Next Address      : 0x0000000080200000</text>
+<text x="18" y="253" font-size="14" xml:space="preserve" fill="#cdd6f4">Domain0 Next Arg1         : 0x0000000087000000</text>
+<text x="18" y="274" font-size="14" xml:space="preserve" fill="#cdd6f4">Domain0 Next Mode         : S-mode</text>
+<text x="18" y="295" font-size="14" xml:space="preserve" fill="#cdd6f4">Boot HART ID              : 0</text>
+<text x="18" y="316" font-size="14" xml:space="preserve" fill="#cdd6f4">Boot HART ISA             : rv64imafdcsuh</text>
+<text x="18" y="337" font-size="14" xml:space="preserve" fill="#cdd6f4">(THU.CST) os is loading ...</text>
+</svg>
