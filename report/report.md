@@ -178,6 +178,16 @@ First-Fit 怎样寻找第一个足够大的空闲块、如何拆分、怎样按�
 
 当前 WSL 环境的验证结果：RISC-V GCC 13.2.0、QEMU 8.2.2/OpenSBI v1.3 下，`make grade` 输出 `check page init: OK`、`check best fit: OK`、`Total Score: 20/20`；`make qemu` 启动后也输出设备树检测到的 128 MB 物理内存以及 `check_alloc_page() succeeded!`。评分脚本中的分配器检查是 Best-Fit 检查，并不代表 First-Fit 的代码被运行测试；First-Fit 在本任务中是阅读理解内容，没有修改 `default_pmm.c`。课程若要求 QEMU 4.1.1，仍应在指定版本环境复测。
 
+**A 同学的测试截图：**
+
+`make grade` 中页初始化检查通过，Best-Fit 检查也通过，评分脚本总分为 20/20：
+
+![A 同学的 make grade 测试结果](images/lab2_a_make_grade.png)
+
+`make qemu` 启动后，OpenSBI 将控制权交给内核；内核从设备树探测到 128 MB 物理内存，并完成页面分配器检查：
+
+![A 同学的 QEMU 启动与物理内存初始化结果](images/lab2_a_make_qemu.png)
+
 ### 功能模块二任务一：理解 First-Fit 连续物理内存分配算法
 
 **负责人：** 2313107-程晓耘
