@@ -1,6 +1,5 @@
 # Lab 3 提示词与 spec 汇总
 
-本文把 A、B 已有记录和 C 的整合验证过程整理成可复用提示词。A、B 部分依据各自提交的 prompt/报告归纳；C 部分是整合时使用的验收规格，不冒充原始聊天记录。
 
 ## A：Trap 汇编入口与上下文恢复
 
@@ -87,7 +86,7 @@ print_ticks()；达到 SHUTDOWN_AFTER 后调用 sbi_shutdown()。断点和非法
 - 不改动 grade 测试逻辑、评分和 sentinel；只修复启动参数以使 QEMU/OpenSBI 实际运行内核。
 - 验收包括 clean build、`make grade` 100/100、普通 `make qemu` 的初始化输出和 1000 ticks 后 SBI 关机。
 
-### 可复用 Prompt
+### Prompt
 
 ```text
 ROLE
